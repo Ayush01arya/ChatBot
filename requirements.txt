@@ -1,7 +1,7 @@
 rasa==1.10.2
 rasa-sdk==1.10.2
 numpy>=1.20,<1.22
-tensorflow==2.6.0
+tensorflow==2.5.0
 scikit-learn==1.0.2
 python-crfsuite==0.9.10
 jsonpickle==3.0.4
