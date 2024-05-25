@@ -1,0 +1,466 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hi there
+    - hiya
+    - howdy
+    - hiya there
+    - hello again
+    - hi again
+    - good day
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - take care
+    - farewell
+    - catch you later
+    - see ya
+    - laters
+    - peace out
+    - until next time
+    - adios
+    - so long
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - absolutely
+    - definitely
+    - sure
+    - yep
+    - yeah
+    - absolutely
+    - definitely
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nah
+    - not at all
+    - negative
+    - I disagree
+    - I'm afraid not
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - feeling fantastic
+    - ecstatic
+    - over the moon
+    - on cloud nine
+    - feeling awesome
+    - feeling incredible
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - feeling down
+    - feeling blue
+    - feeling miserable
+    - feeling gloomy
+    - feeling awful
+    - feeling depressed
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you real?
+    - are you human or a machine?
+    - are you a robot?
+    - are you a real person?
+    - are you a human or AI?
+    - are you a chatbot?
+    - are you automated?
+    - are you a program?
+
+- intent: about_us
+  examples: |
+    - tell me about your company
+    - what is Three Across
+    - about us
+    - who are you
+    - what does your company do
+    - can you tell me about Three Across
+    - explain your company
+    - give me info about Three Across
+    - describe Three Across
+    - what is your organization about
+
+- intent: list_services
+  examples: |
+    - what services do you offer
+    - tell me about your services
+    - services
+    - what can you do for me
+    - what do you provide
+    - what services are available
+    - give me details about your services
+    - describe your service offerings
+    - what kind of services do you have
+    - explain your service list
+
+- intent: contact_us
+  examples: |
+    - how can I contact you
+    - contact details
+    - contact us
+    - How can I contact you?
+    - I need to get in touch
+    - Can I send a message?
+    - How do I reach out for more information?
+    - what are your contact details
+    - can I call you
+    - give me your contact info
+    - how do I reach you
+    - provide your contact information
+    - I want to contact you
+
+- intent: faq
+  examples: |
+    - faq
+    - FAQs
+    - faqs
+    - FAQ
+    - what is Recruitment Process Outsourcing
+    - how do I apply for a job
+    - can you help with executive placements
+    - what is RPO
+    - tell me about your recruitment services
+    - what kind of positions do you fill
+    - can you find me a job
+    - do you offer job placement services
+    - how do I get hired
+    - what are your recruiting solutions
+    - what is executive search
+    - explain your job search services
+    - what is your job application process
+    - how do I find employment
+
+- intent: request_schedule_meeting
+  examples: |
+    - I want to schedule a meeting
+    - Can I book a consultation?
+    - Schedule a meeting
+    - How do I arrange a meeting with your team?
+    - Is there a way to set up a call?
+    - Let's plan a meeting
+    - I'd like to discuss our project, can we meet?
+    - can we have a meeting
+    - how do I schedule an appointment
+    - let's set up a meeting
+    - when can we meet
+    - I need to speak with someone
+    - I want to meet your team
+    - can I have a conversation with you
+    - can we chat
+    - I'd like to talk to you
+    - arrange a meeting with me
+    - let's have a call
+    - I need to speak to a representative
+
+- intent: our_vision
+  examples: |
+    - What is the vision of Three Across?
+    - Tell me about your vision
+    - What do you aim to achieve?
+    - Explain your vision
+    - what are your long-term goals
+    - what is the purpose of your organization
+    - can you share your company's vision
+    - what is the mission of your company
+    - what is your company's mission statement
+    - what is the objective of Three Across
+    - what drives your organization
+    - what are your aspirations
+    - what are your ambitions
+    - what are you trying to accomplish
+    - what is your end goal
+
+
+- intent: ask_values
+  examples: |
+    - What are your core values?
+    - Tell me about your values
+    - What principles do you follow?
+    - what are your guiding principles
+    - what values do you uphold
+    - can you share your company values
+    - what moral standards do
+    - please explain your values to me
+    - could you elaborate on your values
+    - I'm curious about your company's values
+    - what ethical standards do you follow
+    - I'd like to know more about your values
+    - could you tell me about your principles
+    - can you describe your values to me
+    - what values are important to your company
+
+- intent: ask_services
+  examples: |
+    - What services do you offer?
+    - Tell me about your services
+    - What can you help me with?
+    - What kind of recruitment services do you provide?
+    - can you list your services
+    - what are the main services you provide
+    - can you give me an overview of your services
+    - what services are available to clients
+    - tell me more about your service offerings
+    - could you elaborate on your services
+    - I'm interested in your services, could you provide more information
+    - I want to know more about what you offer
+    - what services are included in your portfolio
+    - I'm looking for information on your services
+    - do you offer any specialized services
+    - could you tell me more about what you do
+
+- intent: ask_rpo
+  examples: |
+    - Tell me about Recruitment Process Outsourcing
+    - What is RPO?
+    - Explain Recruitment Process Outsourcing
+    - can you explain RPO
+    - what does RPO involve
+    - what is the process for Recruitment Process Outsourcing
+    - what are the benefits of RPO
+    - I'm not familiar with RPO, can you provide more details
+    - could you give me more information on RPO
+    - how does Recruitment Process Outsourcing work
+    - I want to understand more about RPO
+    - I'd like to know about the services provided in RPO
+    - what are the advantages of RPO
+    - I'm interested in learning about RPO, can you help
+    - can you describe the role of RPO in recruitment
+
+- intent: ask_executive_search
+  examples: |
+    - What is Executive Search?
+    - Tell me about your Executive Search service
+    - Explain Executive Search
+    - could you explain Executive Search to me
+    - how does Executive Search work
+    - what is the process for Executive Search
+    - I'm not familiar with Executive Search, can you provide more details
+    - can you describe the benefits of Executive Search
+    - I want to understand more about Executive Search
+    - I'd like to know about the services provided in Executive Search
+    - what are the advantages of Executive Search
+    - I'm interested in learning about Executive Search, can you help
+    - can you describe the role of Executive Search in recruitment
+    - what distinguishes Executive Search from other recruitment methods
+    - what makes Executive Search different from traditional hiring
+
+- intent: ask_recruiter_on_demand
+  examples: |
+    - What is Recruiter on Demand?
+    - Tell me about Recruiter on Demand
+    - Explain Recruiter on Demand
+    - could you explain Recruiter on Demand to me
+    - how does Recruiter on Demand work
+    - what is the process for Recruiter on Demand
+    - I'm not familiar with Recruiter on Demand, can you provide more details
+    - can you describe the benefits of Recruiter on Demand
+    - I want to understand more about Recruiter on Demand
+    - I'd like to know about the services provided in Recruiter on Demand
+    - what are the advantages of Recruiter on Demand
+    - I'm interested in learning about Recruiter on Demand, can you help
+    - can you describe the role of Recruiter on Demand in recruitment
+    - what distinguishes Recruiter on Demand from other recruitment methods
+    - what makes Recruiter on Demand different from traditional hiring
+
+- intent: ask_early_careers
+  examples: |
+    - What is Early Careers?
+    - Tell me about Early Careers service
+    - Explain Early Careers
+    - could you explain Early Careers to me
+    - how does Early Careers work
+    - what is the process for Early Careers
+    - I'm not familiar with Early Careers, can you provide more details
+    - can you describe the benefits of Early Careers
+    - I want to understand more about Early Careers
+    - I'd like to know about the services provided in Early Careers
+    - what are the advantages of Early Careers
+    - I'm interested in learning about Early Careers, can you help
+    - can you describe the role of Early Careers in recruitment
+    - what distinguishes Early Careers from other recruitment methods
+    - what makes Early Careers different from traditional hiring
+
+- intent: ask_candidate_experience
+  examples: |
+    - What is Candidate Experience Enhancement?
+    - Tell me about Candidate Experience Enhancement
+    - Explain Candidate Experience Enhancement
+    - could you explain Candidate Experience Enhancement to me
+    - how does Candidate Experience Enhancement work
+    - what is the process for Candidate Experience Enhancement
+    - I'm not familiar with Candidate Experience Enhancement, can you provide more details
+    - can you describe the benefits of Candidate Experience Enhancement
+    - I want to understand more about Candidate Experience Enhancement
+    - I'd like to know about the services provided in Candidate Experience Enhancement
+    - what are the advantages of Candidate Experience Enhancement
+    - I'm interested in learning about Candidate Experience Enhancement, can you help
+    - can you describe the role of Candidate Experience Enhancement in recruitment
+    - what distinguishes Candidate Experience Enhancement from other recruitment methods
+    - what makes Candidate Experience Enhancement different from traditional hiring
+
+- intent: ask_consulting_services
+  examples: |
+    - What are your Consulting Services?
+    - Tell me about your Consulting Services
+    - Explain Consulting Services
+    - could you explain Consulting Services to me
+    - how does Consulting Services work
+    - what is the process for Consulting Services
+    - I'm not familiar with Consulting Services, can you provide more details
+    - can you describe the benefits of Consulting Services
+    - I want to understand more about Consulting Services
+    - I'd like to know about the services provided in Consulting Services
+    - what are the advantages of Consulting Services
+    -
+
+
+- intent: ask_custom_solutions
+  examples: |
+    - What are Customized Solutions and Strategic Consulting?
+    - Tell me about Customized Solutions and Strategic Consulting
+    - Explain Customized Solutions and Strategic Consulting
+    - could you explain Customized Solutions and Strategic Consulting further
+    - I'd like more information on Customized Solutions and Strategic Consulting
+    - Can you provide details about Customized Solutions and Strategic Consulting
+    - What services are included in Customized Solutions and Strategic Consulting
+    - How does Customized Solutions and Strategic Consulting benefit clients
+    - Can you elaborate on the offerings under Customized Solutions and Strategic Consulting
+    - I'm interested in learning more about Customized Solutions and Strategic Consulting
+    - Can you describe the process of Customized Solutions and Strategic Consulting
+    - What distinguishes Customized Solutions and Strategic Consulting from other services
+    - How can Customized Solutions and Strategic Consulting help my organization
+    - What are the advantages of availing Customized Solutions and Strategic Consulting
+    - Can you outline the scope of Customized Solutions and Strategic Consulting
+    - What outcomes can be expected from Customized Solutions and Strategic Consulting
+
+- intent: ask_lateral_hiring
+  examples: |
+    - What is Lateral Hiring?
+    - Tell me about Lateral Hiring
+    - Explain Lateral Hiring
+    - could you explain Lateral Hiring further
+    - I'd like more information on Lateral Hiring
+    - Can you provide details about Lateral Hiring
+    - What services are included in Lateral Hiring
+    - How does Lateral Hiring benefit clients
+    - Can you elaborate on the offerings under Lateral Hiring
+    - I'm interested in learning more about Lateral Hiring
+    - Can you describe the process of Lateral Hiring
+    - What distinguishes Lateral Hiring from other services
+    - How can Lateral Hiring help my organization
+    - What are the advantages of availing Lateral Hiring
+    - Can you outline the scope of Lateral Hiring
+    - What outcomes can be expected from Lateral Hiring
+
+- intent: send_message
+  examples: |
+    - I want to send a message
+    - Send message
+    - I would like to message you
+    - please send a message
+    - can I send you a message
+    - how do I send a message
+    - I'd like to get in touch via message
+    - I need to send a message
+    - I want to communicate via message
+    - what's the process for sending a message
+    - can you guide me through messaging
+    - is there a way to message you
+    - what's the procedure for messaging
+    - how can I reach out to you through messaging
+    - I need assistance with messaging
+    - can you assist me with sending a message
+    - what are the steps for messaging
+
+- intent: more_questions
+  examples: |
+    - I have more questions
+    - Can you answer more questions?
+    - I need help with more things
+    - I have more queries
+    - Can you assist me with more questions?
+- intent: back_to_menu
+  examples: |
+    - back to menu
+    - return to main menu
+    - go back to menu
+    - go to main menu
+    - back to start
+    - back to the beginning
+- intent: more_details
+  examples: |
+    - More details
+    - Provide more information
+    - I want to know more
+    - Can you tell me more
