@@ -1,0 +1,231 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - about_us
+  - list_services
+  - contact_us
+  - faq
+  - request_schedule_meeting
+  - schedule_meeting
+  - nlu_fallback
+  - our_vision
+  - ask_values
+  - ask_services
+  - ask_rpo
+  - ask_executive_search
+  - ask_recruiter_on_demand
+  - ask_early_careers
+  - ask_candidate_experience
+  - ask_consulting_services
+  - ask_custom_solutions
+  - ask_lateral_hiring
+  - send_message
+  - back_to_menu
+  - more_questions
+  - more_details
+
+responses:
+  utter_show_menu:
+    - text: "Here are the options in the main menu:"
+      buttons:
+        - title: "About Us"
+          payload: /about_us
+        - title: "Services"
+          payload: /list_services
+        - title: "Contact Us"
+          payload: /contact_us
+        - title: "FAQs"
+          payload: /faq
+
+  utter_greet:
+    - text: "Hello! Welcome to Three Across. How can I assist you today?"
+      buttons:
+        - title: "About Us"
+          payload: /about_us
+        - title: "Services"
+          payload: /list_services
+        - title: "Contact Us"
+          payload: /contact_us
+        - title: "FAQs"
+          payload: /faq
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_more_details:
+    - text: "For more details visit our website https://thethreeacross.com/"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "See you later!"
+    - text: "Take care!"
+    - text: "Farewell!"
+    - text: "Catch you later!"
+    - text: "Have a good one!"
+    - text: "Adios!"
+    - text: "Until next time!"
+    - text: "Peace out!"
+    - text: "Goodbye for now!"
+    - text: "Talk to you soon!"
+    - text: "So long!"
+    - text: "See you soon!"
+    - text: "Later, alligator!"
+    - text: "Bye for now!"
+    - text: "Take it easy!"
+    - text: "Cheerio!"
+    - text: "Ciao!"
+    - text: "Till we meet again!"
+    - text: "Be well!"
+    - text: "Bye-bye!"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by The <b>Threeacross</b> (https://thethreeacross.com/)."
+
+  utter_about_us:
+    - text: "Three Across is dedicated to bringing a human touch back to HR. We offer holistic recruitment solutions across all organizational levels."
+      buttons:
+        - title: "Our Vision"
+          payload: /our_vision
+        - title: "Our Values"
+          payload: /ask_values
+        - title: "Back to Main Menu"
+          payload: /back_to_menu
+  utter_ask_services:
+    - text: "We offer a variety of services including Recruitment Process Outsourcing, Executive Search, Recruiter on Demand, Early Careers, Candidate Experience Enhancement, Consulting Services, Customized Solutions, and Strategic Consulting, and Lateral Hiring."
+      buttons:
+        - title: "Back to Main Menu"
+          payload: /back_to_menu
+  utter_list_services:
+    - text: "We offer a range of services including Recruitment Process Outsourcing, Executive Search, Recruiter On Demand, Early Careers, Candidate Experience Enhancement, Consulting Services, Customized Solutions, and Lateral Hiring."
+      buttons:
+        - title: "More Details"
+          payload: /more_details
+        - title: "Back to Main Menu"
+          payload: /back_to_menu
+
+  utter_contact_us:
+    - text: "You can connect us through WhatsApp: +91-8448996693"
+
+  utter_faq:
+    - text: "Here are some common questions:\n1. What is Recruitment Process Outsourcing?\n2. How do I apply for a job?\n3. Can you help with executive placements?"
+      buttons:
+        - title: "More Questions"
+          payload: /more_questions
+        - title: "Back to Main Menu"
+          payload: /back_to_menu
+
+  utter_default_response:
+    - text: "I'm sorry, I didn't understand that. Could you please rephrase?"
+
+  utter_more_response:
+    - text: "Here are some additional frequently asked questions:\n1. What services do you offer?\n2. How can I contact customer support?\n3. What are your business hours?"
+
+  utter_our_vision:
+    - text: "The vision of Three Across is to bring strategic, action-oriented, and outcome-focused solutions to HR. We emphasize a holistic approach that covers all organizational levels, reinstating the human touch in HR."
+      buttons:
+        - title: "More Questions"
+          payload: /faq
+        - title: "Back to Main Menu"
+          payload: /back_to_menu
+
+  utter_ask_values:
+    - text: "Our core values are integrity, accountability, and inclusivity."
+      buttons:
+        - title: "More Questions"
+          payload: /faq
+        - title: "Back to Main Menu"
+          payload: /back_to_menu
+
+
+
+  utter_ask_rpo:
+    - text: "Our Recruitment Process Outsourcing (RPO) service enhances hiring efficiency by integrating seamlessly with your processes."
+      buttons:
+        - title: "Back to Main Menu"
+          payload: /back_to_menu
+
+  utter_ask_executive_search:
+    - text: "Our Executive Search service focuses on identifying leaders who align with your vision and leadership needs."
+      buttons:
+        - title: "Back to Main Menu"
+          payload: /back_to_menu
+
+  utter_ask_recruiter_on_demand:
+    - text: "Our Recruiter on Demand service provides dedicated recruitment support as an extension of your team."
+      buttons:
+        - title: "Back to Main Menu"
+          payload: /back_to_menu
+
+  utter_ask_early_careers:
+    - text: "Our Early Careers service attracts and nurtures emerging talent to drive your organization's future success."
+      buttons:
+        - title: "Back to Main Menu"
+          payload: /back_to_menu
+
+  utter_ask_candidate_experience:
+    - text: "Our Candidate Experience Enhancement service enhances every candidate interaction to leave a lasting positive impression."
+      buttons:
+        - title: "Back to Main Menu"
+          payload: /back_to_menu
+
+  utter_ask_consulting_services:
+    - text: "Our Consulting Services offer strategic insights and expertise to navigate the dynamic HR landscape."
+      buttons:
+        - title: "Back to Main Menu"
+          payload: /back_to_menu
+
+  utter_ask_custom_solutions:
+    - text: "Our Customized Solutions and Strategic Consulting services craft personalized hiring solutions to meet your unique organizational goals."
+      buttons:
+        - title: "Back to Main Menu"
+          payload: /back_to_menu
+
+  utter_ask_lateral_hiring:
+    - text: "Our Lateral Hiring service tailors strategies to integrate experienced professionals seamlessly into your teams."
+      buttons:
+        - title: "Back to Main Menu"
+          payload: /back_to_menu
+
+  utter_send_message:
+    - text: "Message has been sent."
+      buttons:
+        - title: "Back to Main Menu"
+          payload: /back_to_menu
+
+actions:
+  - action_schedule_meeting
+  - action_default_fallback
+  - utter_more_details
+  - action_send_custom_message
+  - action_utter_random_goodbye
+rules:
+  - rule: respond to more details
+    steps:
+      - intent: more_details
+      - action: utter_more_details
+slots:
+  meeting_scheduled:
+    type: bool
+    initial_value: False
+    influence_conversation: False
+    mappings:
+      - type: from_intent
+        intent: schedule_meeting
+        value: True
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
