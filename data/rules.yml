@@ -1,0 +1,118 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+    - intent: goodbye
+    - action: action_utter_random_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
+
+- rule: Greet response
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: About us response
+  steps:
+    - intent: about_us
+    - action: utter_about_us
+
+- rule: List services response
+  steps:
+    - intent: list_services
+    - action: utter_list_services
+
+- rule: Contact us response
+  steps:
+    - intent: contact_us
+    - action: utter_contact_us
+
+- rule: FAQ response
+  steps:
+    - intent: faq
+    - action: utter_faq
+
+- rule: Fallback rule
+  steps:
+    - intent: nlu_fallback
+    - action: action_default_fallback
+
+- rule: Schedule meeting
+  steps:
+    - intent: schedule_meeting
+    - action: action_schedule_meeting
+
+- rule: Respond to our_vision
+  steps:
+    - intent: our_vision
+    - action: utter_our_vision
+
+- rule: Respond to ask_values
+  steps:
+    - intent: ask_values
+    - action: utter_ask_values
+
+- rule: Respond to ask_services
+  steps:
+    - intent: ask_services
+    - action: utter_ask_services
+
+- rule: Respond to ask_rpo
+  steps:
+    - intent: ask_rpo
+    - action: utter_ask_rpo
+
+- rule: Respond to ask_executive_search
+  steps:
+    - intent: ask_executive_search
+    - action: utter_ask_executive_search
+
+- rule: Respond to ask_recruiter_on_demand
+  steps:
+    - intent: ask_recruiter_on_demand
+    - action: utter_ask_recruiter_on_demand
+
+- rule: Respond to ask_early_careers
+  steps:
+    - intent: ask_early_careers
+    - action: utter_ask_early_careers
+
+- rule: Respond to ask_candidate_experience
+  steps:
+    - intent: ask_candidate_experience
+    - action: utter_ask_candidate_experience
+
+- rule: Respond to ask_consulting_services
+  steps:
+    - intent: ask_consulting_services
+    - action: utter_ask_consulting_services
+
+- rule: Respond to ask_custom_solutions
+  steps:
+    - intent: ask_custom_solutions
+    - action: utter_ask_custom_solutions
+
+- rule: Respond to ask_lateral_hiring
+  steps:
+    - intent: ask_lateral_hiring
+    - action: utter_ask_lateral_hiring
+
+- rule: Respond to send_message
+  steps:
+    - intent: send_message
+    - action: utter_send_message
+
+- rule: More Questions
+  steps:
+    - intent: more_questions
+    - action: utter_more_response
+
+- rule: Respond to more details
+  steps:
+    - intent: more_details
+    - action: utter_more_details

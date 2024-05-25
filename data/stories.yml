@@ -1,0 +1,163 @@
+version: "3.1"
+
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - intent: affirm
+      - action: utter_happy
+
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: greet path
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: about us path
+    steps:
+      - intent: about_us
+      - action: utter_about_us
+
+  - story: list services path
+    steps:
+      - intent: list_services
+      - action: utter_list_services
+
+  - story: contact us path
+    steps:
+      - intent: contact_us
+      - action: utter_contact_us
+
+  - story: schedule meeting path
+    steps:
+      - intent: request_schedule_meeting
+      - action: action_schedule_meeting
+
+  - story: faq path
+    steps:
+      - intent: faq
+      - action: utter_faq
+
+  - story: User Inquires About Vision
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: our_vision
+      - action: utter_our_vision
+
+  - story: User Asks About Company Values
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_values
+      - action: utter_ask_values
+
+  - story: User Requests Service Details
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_services
+      - action: utter_ask_services
+
+  - story: User Wants to Send a Message
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: send_message
+      - action: utter_send_message
+
+  - story: User asks about vision
+    steps:
+      - intent: our_vision
+      - action: utter_our_vision
+
+  - story: User asks about values
+    steps:
+      - intent: ask_values
+      - action: utter_ask_values
+
+  - story: User asks about services
+    steps:
+      - intent: ask_services
+      - action: utter_ask_services
+
+  - story: User asks about RPO
+    steps:
+      - intent: ask_rpo
+      - action: utter_ask_rpo
+
+  - story: User asks about executive search
+    steps:
+      - intent: ask_executive_search
+      - action: utter_ask_executive_search
+
+  - story: User asks about recruiter on demand
+    steps:
+      - intent: ask_recruiter_on_demand
+      - action: utter_ask_recruiter_on_demand
+
+  - story: User asks about early careers
+    steps:
+      - intent: ask_early_careers
+      - action: utter_ask_early_careers
+
+  - story: User asks about candidate experience
+    steps:
+      - intent: ask_candidate_experience
+      - action: utter_ask_candidate_experience
+
+  - story: User asks about consulting services
+    steps:
+      - intent: ask_consulting_services
+      - action: utter_ask_consulting_services
+
+  - story: User asks about custom solutions
+    steps:
+      - intent: ask_custom_solutions
+      - action: utter_ask_custom_solutions
+
+  - story: User asks about lateral hiring
+    steps:
+      - intent: ask_lateral_hiring
+      - action: utter_ask_lateral_hiring
+
+  - story: User sends a message
+    steps:
+      - intent: send_message
+      - action: utter_send_message
+
+  - story: Back to main menu
+    steps:
+      - intent: back_to_menu
+      - action: utter_show_menu
+
+  - story: User asks more questions
+    steps:
+      - intent: more_questions
+      - action: utter_more_response
+  - story: user wants more details
+    steps:
+      - intent: more_details
+      - action: utter_more_details
+  - story: say goodbye
+    steps:
+      - intent: goodbye
+      - action: action_utter_random_goodbye
