@@ -1,12 +1,12 @@
 rasa==3.5.17
 rasa-sdk==3.5.1
 numpy>=1.20,<1.22
-tensorflow==2.11.0
+tensorflow==2.7.0  # Update to a compatible version with Python 3.11.9
 scikit-learn==1.0.2
 python-crfsuite==0.9.10
 jsonpickle==3.0.4
 pydot==1.4.2
-requests==2.31.0
+requests==2.26.0  # Update to a compatible version with Python 3.11.9
 aiohttp==3.8.6
 redis==4.6.0
 websockets==10.4
